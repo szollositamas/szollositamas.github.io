@@ -1,1 +1,0 @@
-# szollositamas.github.io
