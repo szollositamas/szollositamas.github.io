@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
+<meta charset="UTF-8">
+
 <head>
-  <title>Trolibusz</title>
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <script src="jquery.min.js"></script>
-  <script src="popper.min.js"></script>
-  <script src="bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="troli.js"></script>
   <link href="troli.css" rel="stylesheet">
+  <title>Trolibuszok</title>
+  
   <style>
   /* Make the image fully responsive */
   .carousel-inner img {
@@ -40,10 +42,12 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#felsovezetes">Felsővezetés</a>
-      </li>  
+      
+      </li>     
       <li class="nav-item">
-        <a class="nav-link" href="#felsovezetes">Budapesti blokkok</a>
-      </li>      
+        <a class="nav-link" href="#viszonylatok">Budapesti viszonylatok</a>
+      
+      </li>     
     </ul>
   </div>
 </nav>
@@ -81,12 +85,12 @@
   </a>
 </div>
 
- 
+  
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
- <h1 class="display-2">Trolibusz</h1>
-      <p id="def">A trolibusz olyan közúti tömegközlekedési elektromos hajtású, gumikerekes jármű, amelyet áramszedők kapcsolnak a felsővezetékhez, amiből a mozgáshoz szükséges energiát kapja. Funkciója általában a közforgalmú autóbuszéhoz hasonló. A trolibusz közúti jármű; a <a href="http://net.jogtar.hu/kresz" target="_blank">KRESZ</a> definíciója szerint „elektromos felsővezetékhez kötött gépkocsi”.</p>    
+	  <h1 class="display-2">Trolibusz</h1>
+      <p id="def">A trolibusz olyan közúti tömegközlekedési elektromos hajtású, gumikerekes jármű, amelyet áramszedők kapcsolnak a felsővezetékhez, amiből a mozgáshoz szükséges energiát kapja. Funkciója általában a közforgalmú autóbuszéhoz hasonló. A trolibusz közúti jármű; a <a href="http://net.jogtar.hu/kresz" target="_blank">KRESZ</a> szerint „elektromos felsővezetékhez kötött gépkocsi”.</p>     
     </div>
   </div>
   <div class="row">
@@ -101,10 +105,9 @@
    </div>
    <div class="row">
     <div class="col-lg-8" id="felepites">
-      <h2 class="display-4">Felépítés</h2>
+      <h2 class="display-4">Felépítés</h2> 
       <p>1980-ban gyártásba került csehszlovák Škoda 14Tr trolibusz rajza, vastag betűvel kiemelve a trolibusz-specifikus elemek.</p>
-      <img src="jarmu.png" class="img-thumbnail" alt="Trolibusz felépítése" title="Trolibusz felépítése"/>      
-     </div>
+      <img src="jarmu.png" class="img-thumbnail" alt="Trolibusz felépítése" title="Trolibusz felépítése"/> </div>
     <div class="col-lg-4" id="magyarazat">
       <ol>
         <li>Felsővezeték</li>
@@ -124,7 +127,8 @@
         <li>Elektromos berendezés a tetőn</li>
         <li>Pályaszám</li>
       </ol>
-    </div>
+      <img src="jarmu.png" class="img-thumbnail" alt="Trolibusz felépítése" title="Trolibusz felépítése"/>      
+     </div>
     </div>
     <div class="row">
     <div class="col-lg-6" id="felsovezetes">
@@ -133,27 +137,27 @@
       <p>A rúdáramszedő szénbetétes csúszófejen keresztül érintkezik a felsővezetékkel. Ez a csúszófej olyan kialakítású, hogy a vezeték egyben tereli is a szedő végét, így jön létre a stabil kontaktus. Azonban emiatt vezeték-keresztezésnél a közúti vasúténál bonyolultabb kivitelű szerelvényeket szükséges beépíteni, amelyek a csúszófej folyamatos vezetéséről is gondoskodnak. A kétféle pólusú vezetékeket pedig a rövidzárlat elkerülése végett el kell szigetelni egymástól, ezért vezeték-kereszteződésekben, több helyen árammentes szakaszok találhatóak. Itt a trolibusznak lendületből kell áthaladnia, miközben a vontatófeszültség hiányára jelzőcsengő figyelmezteti a vezetőt.</p>      
     </div>
     <div class="col-lg-6" id="viszonylatok">
-      <h2 class="display-4">Budapesti viszonylatok</h2>
+      <h2 class="display-4">Budapesti viszonylatok</h2> 
       <p>Budapesten az első trolibuszjárat 1933. december 16-án indult el Óbudán, a Vörösvári út és az Óbudai temető között 7-es jelzéssel. A pesti hálózat első, Király utcai vonalát Sztálin születésének 70. évfordulóján, 1949. december 21-én nyitották meg. A trolibuszjárat ennek tiszteletére a 70-es jelzést kapta. Ezt követően az 1950-es években szinte minden évben indultak új járatok. Napjainkban a vonalhálózat 13 alap- és 3 betétjáratból áll, amit a Budapesti Közlekedési Központ megrendelésére a Budapesti Közlekedési Zrt. üzemeltet. A hálózat hossaz 75,5km, a vonalak száma 16, összesen 172 megállóval.</p>
       <p>Az alábbi űrlapon megnézheti a kétszámjegyű járatszámok viszonylatait:</p>
       <form method="post" id="jaratviszonylatok">
-      <p>Járatszám:
-      <br>
-      <select onchange="vegallomasKiiras(this.value)" id="jaratSzam">      
-      <script>
+        <p>Járatszám:
+        <br>
+        <select onchange="vegallomasKiiras(this.value)" id="jaratSzam">
+        <script>
         vegallomasNevek.forEach(jaratKiiras);
-      </script>
-      </select>
-      </p>
-      <p>A járat végállomásai:<br>
-      <b id="vegallomasok">
+        </script>
+        </select>
+        </p>
+        <p>A járat végállomásai:<br>
+        <b id="vegallomasok">
         <script>vegallomasKiiras("70");</script>
-      </b>
-      </p>
-      </form>
+        </b>
+        </p>
+        </form>
     </div>
   </div>
-  <button onclick="fel()" id="felGomb" title="Az oldal tetejére">Fel</button>
+  <button onclick="fel()" id="felGomb" title="Az oldal tetejére">Fel</button> 
 </div>
 <footer class="text-center py-3">Források:
     <img src="wikiindexico.png">/<a href="https://hu.wikipedia.org/wiki/Trolibusz" target="_blank">Trolibusz</a>
