@@ -1,4 +1,3 @@
-
 var vegallomasNevek = [];
 vegallomasNevek["70"] = "Kossuth Lajos tér - Erzsébet királyné útja, aluljáró";
 vegallomasNevek["72"] = "Orczy tér - Zugló vasútállomás (Hermina út)";
