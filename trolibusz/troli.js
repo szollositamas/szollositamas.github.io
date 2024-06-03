@@ -11,18 +11,15 @@ vegallomasNevek["79"] = "Keleti pályaudvar - Kárpát utca";
 vegallomasNevek["80"] = "Keleti pályaudvar - Örs vezér tere";
 vegallomasNevek["81"] = "Örs vezér tere - Fischer István utca";
 vegallomasNevek["82"] = "Uzsoki Utcai Kórház - Örs vezér tere";
-
 function jaratKiiras(elem, index){
 	var ujElem = document.createElement("option");
     var ujSzoveg = document.createTextNode(index); 
     ujElem.appendChild(ujSzoveg);
     document.getElementById("jaratSzam").appendChild(ujElem);
 }
-
 function vegallomasKiiras(jarat){
     document.getElementById("valasz").innerHTML=vegallomasNevek[jarat];
 }
-
 function fel() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
